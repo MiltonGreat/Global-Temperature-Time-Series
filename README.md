@@ -10,6 +10,22 @@ The goal of this project is to analyze historical global temperature data, visua
 - Correlation Analysis
 - Time Series Analysis
 
+### Quality Issues:
+
+- Missing temperature readings for some regions or time periods.
+- Outliers due to unusual weather events (e.g., extreme storms or droughts).
+- Inconsistent data formats for time or region names.
+
+Cleaning/Transformation:
+- Interpolate missing temperature values based on neighboring data.
+- Remove or flag outliers using statistical thresholds like z-scores or IQR.
+- Normalize temperature values across decades to account for recording changes.
+
+Known Limitations:
+- Does not account for regional differences in CO₂ emissions.
+- Limited coverage for certain geographic areas, such as the Arctic.
+- Potential biases in historical data collection methods.
+
 ### Dataset Information
 
 The dataset consists of temperature records for Earth's surface, collected from multiple sources. The data spans from 1880 to 2016, and it includes the following columns:
