@@ -38,6 +38,16 @@ The dataset consists of temperature records for Earth's surface, collected from 
 - Global Temperature Trend Plot: A line plot showing the global temperature trend from 1880 to 2016, highlighting key fluctuations over time.
 - Correlation Heatmap: A heatmap showing correlations between the numerical columns, with a strong correlation (0.82) between the Year and Mean temperature.
 
+#### Output
+
+Visualizations:
+- Global temperature trends over time.
+- Correlation matrix of numeric variables.
+- Histogram of normalized temperatures.
+
+Cleaned Dataset:
+- Saved as cleaned_temperature_data.csv in the project directory.
+
 ### Insights
 
 - Correlation between Year and Mean Temperature: The dataset shows a strong positive correlation of 0.82 between the Year and the Mean temperature anomaly, indicating that the Earth's surface temperature has been steadily increasing over time.
