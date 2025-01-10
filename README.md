@@ -2,29 +2,22 @@
 
 ### Overview
 
-The goal of this project is to analyze historical global temperature data, visualize trends, and identify correlations between temperature and other factors. The dataset is ideal for practicing:
+The Global Temperature Dataset Analysis project provides an in-depth exploration of historical temperature data to study long-term climate trends. By visualizing temperature changes over decades and analyzing their correlation with environmental factors like CO2 emissions or land use, this project highlights patterns critical for understanding climate change.
 
-- Exploratory Data Analysis (EDA)
-- Data Preprocessing
-- Data Visualization
-- Correlation Analysis
-- Time Series Analysis
+### Key Features
 
-### Quality Issues:
+Data Cleaning:
+- Handling missing temperature readings using interpolation.
+- Identifying and addressing outliers caused by unusual weather events.
+- Standardizing data formats for seamless analysis.
 
-- Missing temperature readings for some regions or time periods.
-- Outliers due to unusual weather events (e.g., extreme storms or droughts).
-- Inconsistent data formats for time or region names.
+Data Transformation:
+- Normalizing temperature values to account for changes in recording methods over time.
 
-Cleaning/Transformation:
-- Interpolate missing temperature values based on neighboring data.
-- Remove or flag outliers using statistical thresholds like z-scores or IQR.
-- Normalize temperature values across decades to account for recording changes.
-
-Known Limitations:
-- Does not account for regional differences in CO₂ emissions.
-- Limited coverage for certain geographic areas, such as the Arctic.
-- Potential biases in historical data collection methods.
+Visualization:
+- Temperature trends across decades.
+- Correlation matrix of temperature and other environmental factors.
+- Distribution of normalized temperature values.
 
 ### Dataset Information
 
@@ -34,6 +27,11 @@ The dataset consists of temperature records for Earth's surface, collected from 
 - Date: The date the temperature was recorded.
 - Mean: The average global temperature anomaly (in °C) for the given date.
 - Year: The extracted year from the Date column.
+
+#### Data Quality Concerns Addressed
+- Missing Data: Missing values are interpolated based on surrounding data.
+- Outliers: Extreme values are identified using statistical thresholds and flagged or removed.
+- Normalization: Temperature values are scaled to a consistent range to allow fair comparisons across years.
 
 ### Expected Output
 
