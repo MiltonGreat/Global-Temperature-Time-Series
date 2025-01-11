@@ -1,57 +1,43 @@
-# Global-Temperature-Time-Series
+# Global-Temperature-Datset-Analysis
 
 ### Overview
 
-The Global Temperature Dataset Analysis project provides an in-depth exploration of historical temperature data to study long-term climate trends. By visualizing temperature changes over decades and analyzing their correlation with environmental factors like CO2 emissions or land use, this project highlights patterns critical for understanding climate change.
-
-### Key Features
-
-Data Cleaning:
-- Handling missing temperature readings using interpolation.
-- Identifying and addressing outliers caused by unusual weather events.
-- Standardizing data formats for seamless analysis.
-
-Data Transformation:
-- Normalizing temperature values to account for changes in recording methods over time.
-
-Visualization:
-- Temperature trends across decades.
-- Correlation matrix of temperature and other environmental factors.
-- Distribution of normalized temperature values.
+This project performs an extensive analysis of global temperature data to identify long-term climate trends and patterns. The analysis involves data cleaning, visualization, and transformation, with an emphasis on handling missing values, outliers, and normalization. The project highlights key trends in global temperature fluctuations, shedding light on the impact of climate change over time.
 
 ### Dataset Information
 
-The dataset consists of temperature records for Earth's surface, collected from multiple sources. The data spans from 1880 to 2016, and it includes the following columns:
+The dataset used is Global Temperature Time Series, which contains monthly global temperature anomalies from 1880 to 2016. The dataset includes the following columns:
 
 - Source: The dataset source (e.g., GCAG, GISTEMP).
 - Date: The date the temperature was recorded.
 - Mean: The average global temperature anomaly (in °C) for the given date.
 - Year: The extracted year from the Date column.
 
-#### Data Quality Concerns Addressed
-- Missing Data: Missing values are interpolated based on surrounding data.
-- Outliers: Extreme values are identified using statistical thresholds and flagged or removed.
-- Normalization: Temperature values are scaled to a consistent range to allow fair comparisons across years.
+### Features of the Analysis
 
-### Expected Output
+Data Cleaning and Preprocessing
+- Date Conversion: The Date column is converted to a datetime format, and the Year is extracted for further analysis.
+- Handling Missing Data: Missing values in the Mean column are interpolated using a linear method.
+- Outlier Detection: Outliers in the Mean column are identified using the Z-score method and can be removed based on the project needs.
+- Normalization: The Mean column is normalized using Min-Max Scaling to standardize the data and enable fair comparison across years.
 
-- Global Temperature Trend Plot: A line plot showing the global temperature trend from 1880 to 2016, highlighting key fluctuations over time.
-- Correlation Heatmap: A heatmap showing correlations between the numerical columns, with a strong correlation (0.82) between the Year and Mean temperature.
+### Key Outputs
 
-#### Output
+- Global Temperature Trend: The line plot shows global temperature trends from 1880 to 2016, highlighting major temperature fluctuations and shifts over time.
+- Normalized Temperature Distribution: A histogram depicting the distribution of normalized temperature values.
+- Correlation Matrix: A heatmap showing correlations between the numerical columns, helping to understand relationships between temperature and other environmental factors.
 
-Visualizations:
-- Global temperature trends over time.
-- Correlation matrix of numeric variables.
-- Histogram of normalized temperatures.
+### Visualizations
 
-Cleaned Dataset:
-- Saved as cleaned_temperature_data.csv in the project directory.
+- Global Temperature Trend: Line plot showing the global temperature trend over time, comparing the original and normalized temperature data.
+- Temperature Distribution: Histogram of normalized temperatures with KDE (Kernel Density Estimation) to analyze the spread of temperature values.
+- Correlation Heatmap: Heatmap showing correlations between numerical variables in the dataset, such as Year and Mean temperature anomaly.
 
-### Insights
+### Key Findings
 
-- Correlation between Year and Mean Temperature: The dataset shows a strong positive correlation of 0.82 between the Year and the Mean temperature anomaly, indicating that the Earth's surface temperature has been steadily increasing over time.
-- Visualizing Trends: The global temperature trend over time exhibits clear patterns of warming, especially in recent decades.
+- Global Temperature Trend: The data reveals a steady increase in global temperatures over time, with recent decades showing the most significant warming.
+- Correlation between Year and Temperature: The dataset shows a strong positive correlation (0.82) between Year and the Mean temperature anomaly, suggesting that global temperatures have been rising consistently.
+- Normalized Temperature Distribution: After normalization, the temperature values are scaled between 0 and 1, allowing for a more consistent comparison across years.
 
 ### Future Work
 
