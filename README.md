@@ -1,4 +1,4 @@
-# Global-Temperature-Datset-Analysis
+# Global Temperature Datset Analysis
 
 ### Overview
 
@@ -51,4 +51,4 @@ Data Cleaning and Preprocessing
 
 ### Source
 
-https://www.kaggle.com/datasets/ianpetrustan/global-temperature-time-series
+Dataset: [Global Temperature Dataset on Kaggle](https://www.kaggle.com/datasets/ianpetrustan/global-temperature-time-series)
