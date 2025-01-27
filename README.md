@@ -35,7 +35,7 @@ Data Cleaning and Preprocessing
 
 ##### Line plot showing global treads
 
-![screenshot-localhost_8889-2025 01 27-12_59_28](https://github.com/user-attachments/assets/6088245d-9e70-46aa-99e5-fdd2b2cc7a66)
+![screenshot-github com-2025 01 27-13_05_05](https://github.com/user-attachments/assets/36eaa380-1a35-4d8c-b79d-a85226a9571b)
 
 ### Key Findings
 
