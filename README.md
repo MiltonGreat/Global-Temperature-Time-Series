@@ -8,10 +8,10 @@ This project performs an extensive analysis of global temperature data to identi
 
 I want to answer the following questions:
 
-- What is the global trend in temperature anomalies over time?
-- How does the distribution of global temperature anomalies (normalized values) look?
-- What is the relationship between numerical features, such as the year and mean temperature anomalies?
-- What does the normalized global temperature anomaly look like across the years?
+1. What is the global trend in temperature anomalies over time?
+2. How does the distribution of global temperature anomalies (normalized values) look?
+3. What is the relationship between numerical features, such as the year and mean temperature anomalies?
+4. What does the normalized global temperature anomaly look like across the years?
 
 ### Dataset Information
 
