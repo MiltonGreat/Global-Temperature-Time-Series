@@ -33,6 +33,10 @@ Data Cleaning and Preprocessing
 - Temperature Distribution: Histogram of normalized temperatures with KDE (Kernel Density Estimation) to analyze the spread of temperature values.
 - Correlation Heatmap: Heatmap showing correlations between numerical variables in the dataset, such as Year and Mean temperature anomaly.
 
+##### Line plot showing global treads
+
+![screenshot-localhost_8889-2025 01 27-12_59_28](https://github.com/user-attachments/assets/6088245d-9e70-46aa-99e5-fdd2b2cc7a66)
+
 ### Key Findings
 
 - Global Temperature Trend: The data reveals a steady increase in global temperatures over time, with recent decades showing the most significant warming.
