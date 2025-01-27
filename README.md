@@ -4,6 +4,15 @@
 
 This project performs an extensive analysis of global temperature data to identify long-term climate trends and patterns. The analysis involves data cleaning, visualization, and transformation, with an emphasis on handling missing values, outliers, and normalization. The project highlights key trends in global temperature fluctuations, shedding light on the impact of climate change over time.
 
+### EDA Questions
+
+I want to answer the following questions:
+
+- What is the global trend in temperature anomalies over time?
+- How does the distribution of global temperature anomalies (normalized values) look?
+- What is the relationship between numerical features, such as the year and mean temperature anomalies?
+- What does the normalized global temperature anomaly look like across the years?
+
 ### Dataset Information
 
 The dataset used is Global Temperature Time Series, which contains monthly global temperature anomalies from 1880 to 2016. The dataset includes the following columns:
