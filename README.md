@@ -2,7 +2,7 @@
 
 ### Overview
 
-This project performs an extensive analysis of global temperature data to identify long-term climate trends and patterns. The analysis involves data cleaning, visualization, and transformation, with an emphasis on handling missing values, outliers, and normalization. The project highlights key trends in global temperature fluctuations, shedding light on the impact of climate change over time.
+This project performs a comprehensive analysis of global temperature anomalies over time to uncover long-term climate trends and fluctuations. The focus is on understanding how global temperatures have changed from 1880 to the present, with an emphasis on identifying major climate events, trends, and anomalies. The analysis includes data cleaning, visualization, and transformation techniques, providing insights into the impact of climate change over the years. The project considers the effects of extreme events (outliers) on temperature trends and investigates the relationship between key variables like temperature and year.
 
 ### EDA Questions
 
@@ -10,8 +10,11 @@ I want to answer the following questions:
 
 1. What is the global trend in temperature anomalies over time?
 2. How does the distribution of global temperature anomalies (normalized values) look?
-3. What is the relationship between numerical features, such as the year and mean temperature anomalies?
-4. What does the normalized global temperature anomaly look like across the years?
+3. What is the relationship between the year and global temperature anomalies?
+4. How do the GISTEMP and GCAG datasets compare in terms of temperature anomalies?
+5. What extreme temperature anomalies (both positive and negative) have occurred, and what years did they happen?
+6. Can we predict future global temperature anomalies using historical data?
+7. Have there been periods of rapid warming, such as a hockey-stick pattern?
 
 ### Dataset Information
 
@@ -32,15 +35,18 @@ Data Cleaning and Preprocessing
 
 ### Key Outputs
 
-- Global Temperature Trend: The line plot shows global temperature trends from 1880 to 2016, highlighting major temperature fluctuations and shifts over time.
-- Normalized Temperature Distribution: A histogram depicting the distribution of normalized temperature values.
-- Correlation Matrix: A heatmap showing correlations between the numerical columns, helping to understand relationships between temperature and other environmental factors.
+1. **Global Temperature Trend**: A line plot showing the global temperature trend from 1880 to 2016, highlighting major temperature fluctuations and shifts over time.
+2. **Normalized Temperature Distribution**: A histogram showing the distribution of normalized temperature values across the dataset.
+3. **Correlation Matrix**: A heatmap that visualizes correlations between numerical columns, helping to understand relationships between temperature anomalies and other variables.
+4. **Extreme Temperature Anomalies**: Insights into the years with the highest and lowest recorded anomalies, marking key points in global temperature history.
+Annual Rate of Change**: A line plot showing the annual rate of change in global temperature anomalies, identifying periods of rapid warming.
 
 ### Visualizations
 
-- Global Temperature Trend: Line plot showing the global temperature trend over time, comparing the original and normalized temperature data.
-- Temperature Distribution: Histogram of normalized temperatures with KDE (Kernel Density Estimation) to analyze the spread of temperature values.
-- Correlation Heatmap: Heatmap showing correlations between numerical variables in the dataset, such as Year and Mean temperature anomaly.
+1. **Global Temperature Trend**: A line plot showing the global temperature trend from 1880 to 2016, highlighting major temperature fluctuations and shifts over time.
+2. **Temperature Distribution**: A histogram and KDE (Kernel Density Estimation) of the normalized temperature values to analyze how the temperature anomalies are distributed.
+3. **Correlation Matrix**: A heatmap that visualizes correlations between numerical columns, helping to understand relationships between temperature anomalies and other variables.
+4. **GISTEMP vs. GCAG**: A line plot comparing temperature anomalies from the GISTEMP and GCAG datasets, showing how the two sources of data align over time.
 
 ##### Line plot showing global treads
 
@@ -48,15 +54,23 @@ Data Cleaning and Preprocessing
 
 ### Key Findings
 
-- Global Temperature Trend: The data reveals a steady increase in global temperatures over time, with recent decades showing the most significant warming.
-- Correlation between Year and Temperature: The dataset shows a strong positive correlation (0.82) between Year and the Mean temperature anomaly, suggesting that global temperatures have been rising consistently.
-- Normalized Temperature Distribution: After normalization, the temperature values are scaled between 0 and 1, allowing for a more consistent comparison across years.
+- **Global Temperature Trend**: The data reveals a clear, steady increase in global temperatures over time, with recent decades showing the most significant warming. This aligns with the broader understanding of global climate change.
+
+- **Correlation between Year and Temperature**: A strong positive correlation (0.82) between the Year and Mean temperature anomaly suggests that global temperatures have consistently risen over the years. This provides evidence of ongoing global warming.
+
+- **Normalized Temperature Distribution**: After normalization, the temperature values are scaled between 0 and 1, allowing for a more consistent comparison across years without the influence of large temperature spikes or drops.
+
+- **Extreme Temperature Events**: The year 2016 recorded the highest temperature anomaly, which is consistent with the significant warming seen in recent years. The year 1909 recorded the lowest temperature anomaly, which provides context for the cooler periods in Earth's climate history.
 
 ### Future Work
 
-- Extended Analysis: Explore correlations with additional environmental factors such as CO2 emissions, sea level rise, or land use changes.
-- Time Series Forecasting: Use time series models (ARIMA, LSTM, etc.) to predict future temperature trends based on historical data.
-- Climate Change Modeling: Model the impact of various factors on global temperature and explore different climate change scenarios.
+1. **Extended Analysis**: Investigate additional environmental factors such as CO2 emissions, sea level rise, and land use changes to see how they influence global temperature anomalies.
+
+2. **Time Series Forecasting**: Use time series models (e.g., ARIMA, LSTM) to predict future temperature anomalies based on historical trends.
+
+3. **Climate Change Modeling**: Model the potential impact of various factors (such as human activities and natural climate events) on future global temperature and explore different climate change scenarios.
+
+4. **Regional Temperature Trends**: Investigate temperature anomalies by region to understand how global warming may be affecting different areas of the world.
 
 ### Source
 
